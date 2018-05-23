@@ -1867,14 +1867,6 @@
 # The function lists web server status
 
 
-/usr/local/vesta/bin/v-list-user
-
-# info: list user parameters
-# options: USER [FORMAT]
-#
-# The function to obtain user parameters.
-
-
 /usr/local/vesta/bin/v-list-user-backup
 
 # info: list user backup
@@ -1935,20 +1927,7 @@
 /usr/local/vesta/bin/v-list-user-ns
 
 
-/usr/local/vesta/bin/v-list-user-package
 
-# info: list user package
-# options: PACKAGE [FORMAT]
-#
-# The function for getting the list of system ip parameters.
-
-
-/usr/local/vesta/bin/v-list-user-packages
-
-# info: list user packages
-# options: [FORMAT]
-#
-# The function for obtaining the list of available hosting packages.
 
 
 /usr/local/vesta/bin/v-list-users
@@ -1957,22 +1936,6 @@
 # options: [FORMAT]
 #
 # The function to obtain the list of all system users.
-
-
-/usr/local/vesta/bin/v-list-users-stats
-
-# info: list overall user stats
-# options: [FORMAT]
-#
-# The function for listing overall user statistics
-
-
-/usr/local/vesta/bin/v-list-user-stats
-
-# info: list user stats
-# options: [FORMAT]
-#
-# The function for listing user statistics
 
 
 /usr/local/vesta/bin/v-list-web-domain

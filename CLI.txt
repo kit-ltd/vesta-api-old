@@ -53,18 +53,7 @@
 # The function adds cronjob for vesta autoupdate.
 
 
-/usr/local/vesta/bin/v-add-database
 
-# info: add database
-# options: USER DATABASE DBUSER DBPASS [TYPE] [HOST] [CHARSET]
-#
-# The function creates the database concatenating username  and user_db.
-# Supported types of databases you can get using v-list-sys-config script.
-# If the host isn't stated and there are few hosts configured on the server,
-# then the host will be defined by one of three algorithms. "First" will choose
-# the first host in the list. "Random" will chose the host by a chance.
-# "Weight" will distribute new database through hosts evenly. Algorithm and
-# types of supported databases is designated in the main configuration file.
 
 
 /usr/local/vesta/bin/v-add-database-host
@@ -108,14 +97,6 @@
 # SRV types can be used by a filling in the 'value' argument. The function also
 # gets an id parameter for definition of certain record identifier or for the
 # regulation of records.
-
-
-/usr/local/vesta/bin/v-add-domain
-
-# info: add web/dns/mail domain
-# options: USER DOMAIN [IP] [RESTART]
-#
-# The function adds web/dns/mail domain to a server.
 
 
 /usr/local/vesta/bin/v-add-firewall-ban
@@ -946,15 +927,6 @@
 # The function deletes vesta autoupdate cron job.
 
 
-/usr/local/vesta/bin/v-delete-database
-
-# info: delete database
-# options: USER DATABASE
-#
-# The function for deleting the database. If database user have access to
-# another database, he will not be deleted.
-
-
 /usr/local/vesta/bin/v-delete-database-host
 
 # info: delete database server
@@ -962,14 +934,6 @@
 #
 # The function for deleting the database host from vesta configuration. It will
 # be deleted if there are no databases created on it only.
-
-
-/usr/local/vesta/bin/v-delete-databases
-
-# info: delete user databases
-# options: USER
-#
-# The function deletes all user databases.
 
 
 /usr/local/vesta/bin/v-delete-dns-domain
@@ -1013,12 +977,7 @@
 # The function for deleting a certain record of DNS zone.
 
 
-/usr/local/vesta/bin/v-delete-domain
 
-# info: delete web/dns/mail domain
-# options: USER DOMAIN
-#
-# The function deletes web/dns/mail domain.
 
 
 /usr/local/vesta/bin/v-delete-firewall-ban
@@ -1442,16 +1401,6 @@
 # The function checks system timezone settings
 
 
-/usr/local/vesta/bin/v-get-web-domain-value
-
-# info: get web domain value
-# options: USER DOMAIN KEY
-#
-# The function is intended for obtaining a domain value by the key. This call
-# is useful for arranging composite queries. The answer is displayed only in
-# raw form; output formats aren't supported.
-
-
 /usr/local/vesta/bin/v-insert-dns-domain
 
 # info: insert dns domain
@@ -1500,12 +1449,7 @@
 # The function for obtaining the list of all users cron jobs.
 
 
-/usr/local/vesta/bin/v-list-database
 
-# info: list database
-# options: USER DATABASE [FORMAT]
-#
-# The function for obtaining of all database's parameters.
 
 
 /usr/local/vesta/bin/v-list-database-host
@@ -1524,12 +1468,7 @@
 # The function for obtaining the list of all configured database hosts.
 
 
-/usr/local/vesta/bin/v-list-databases
 
-# info: listing databases
-# options: USER [FORMAT]
-#
-# The function for obtaining the list of all user's databases.
 
 
 /usr/local/vesta/bin/v-list-database-types
@@ -1890,12 +1829,7 @@
 
 
 
-/usr/local/vesta/bin/v-list-web-domain
 
-# info: list web domain parameters
-# options: USER DOMAIN [FORMAT]
-#
-# The function to obtain web domain parameters.
 
 
 /usr/local/vesta/bin/v-list-web-domain-accesslog
@@ -1914,12 +1848,7 @@
 # The function of obtaining raw error web domain logs.
 
 
-/usr/local/vesta/bin/v-list-web-domains
 
-# info: list web domains
-# options: USER [FORMAT]
-#
-# The function to obtain the list of all user web domains.
 
 
 /usr/local/vesta/bin/v-list-web-domain-ssl
@@ -1996,14 +1925,6 @@
 # The function rebuilds system cron config file for specified user.
 
 
-/usr/local/vesta/bin/v-rebuild-databases
-
-# info: rebuild databases
-# options: USER
-#
-# The function for rebuilding of all databases of a single user.
-
-
 /usr/local/vesta/bin/v-rebuild-dns-domain
 
 # info: rebuild dns domain
@@ -2026,18 +1947,6 @@
 # options: USER
 #
 # The function rebuilds EXIM configuration files for all mail domains.
-
-
-
-
-
-/usr/local/vesta/bin/v-rebuild-web-domains
-
-# info: rebuild dns domains
-# options: USER [RESTART]
-#
-# The function rebuilds web configuration files.
-
 
 
 /usr/local/vesta/bin/v-restore-user
@@ -2120,14 +2029,6 @@
 # The function suspends all user cron jobs.
 
 
-/usr/local/vesta/bin/v-suspend-database
-
-# info: suspend database
-# options: USER DATABASE
-#
-# The function for suspending a certain user database.
-
-
 /usr/local/vesta/bin/v-suspend-database-host
 
 # info: suspend database server
@@ -2135,13 +2036,6 @@
 #
 # The function for suspending a database server.
 
-
-/usr/local/vesta/bin/v-suspend-databases
-
-# info: suspend databases
-# options: USER
-#
-# The function for suspending of all databases of a single user.
 
 
 /usr/local/vesta/bin/v-suspend-dns-domain
@@ -2225,24 +2119,6 @@
 
 
 
-/usr/local/vesta/bin/v-suspend-web-domain
-
-# info: suspend web domain
-# options: USER DOMAIN
-#
-# The function for suspending the site's operation. After blocking it all
-# visitors will be redirected to a web page explaining the reason of suspend.
-# By blocking the site the content of all its directories remains untouched.
-
-
-/usr/local/vesta/bin/v-suspend-web-domains
-
-# info: suspend web domains
-# options: USER [RESTART]
-#
-# The function of suspending all user's sites.
-
-
 /usr/local/vesta/bin/v-sync-dns-cluster
 
 # info: synchronize dns domains
@@ -2266,28 +2142,12 @@
 # The function unsuspends all suspended cron jobs.
 
 
-/usr/local/vesta/bin/v-unsuspend-database
-
-# info: unsuspend database
-# options: USER DATABASE
-#
-# The function for unsuspending database.
-
-
 /usr/local/vesta/bin/v-unsuspend-database-host
 
 # info: unsuspend database server
 # options: TYPE HOST
 #
 # The function for unsuspending a database server.
-
-
-/usr/local/vesta/bin/v-unsuspend-databases
-
-# info: unsuspend databases
-# options: USER
-#
-# The function for unsuspending all user's databases.
 
 
 /usr/local/vesta/bin/v-unsuspend-dns-domain
@@ -2369,21 +2229,6 @@
 #
 # The function for unsuspending remote dns server.
 
-
-/usr/local/vesta/bin/v-unsuspend-web-domain
-
-# info: unsuspend web domain
-# options: USER DOMAIN
-#
-# The function of unsuspending the domain.
-
-
-/usr/local/vesta/bin/v-unsuspend-web-domains
-
-# info: unsuspend web domains
-# options: USER [RESTART]
-#
-# The function of unsuspending all user's sites.
 
 
 /usr/local/vesta/bin/v-update-database-disk

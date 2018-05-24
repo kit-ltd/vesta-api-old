@@ -14,6 +14,7 @@ class Api
     protected $hash;
     protected $port;
 
+    use Server;
     use User;
 
     public function __construct($hostname, $hash, $port = 8083)

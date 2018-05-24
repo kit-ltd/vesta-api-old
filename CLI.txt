@@ -1,11 +1,6 @@
 # SOURCE http://vestacp.com/docs/CLI.txt
 
-/usr/local/vesta/bin/v-acknowledge-user-notification
 
-# info: update user notification
-# options: USER NOTIFICATION
-#
-# The function updates user notification.
 
 
 /usr/local/vesta/bin/v-activate-vesta-license
@@ -333,12 +328,7 @@
 # The script enables sftp jailed environment
 
 
-/usr/local/vesta/bin/v-add-user
 
-# info: add system user
-# options: USER PASSWORD EMAIL [PACKAGE] [FNAME] [LNAME]
-#
-# The function creates new user account.
 
 
 /usr/local/vesta/bin/v-add-user-favourites
@@ -1224,14 +1214,6 @@
 # The script enables sftp jailed environment
 
 
-/usr/local/vesta/bin/v-delete-user
-
-# info: delete user
-# options: USER
-#
-# This function deletes a certain user and all his resources such as domains,
-# databases, cron jobs, etc.
-
 
 /usr/local/vesta/bin/v-delete-user-backup
 
@@ -1458,14 +1440,6 @@
 # options: [FORMAT]
 #
 # The function checks system timezone settings
-
-
-/usr/local/vesta/bin/v-get-user-value
-
-# info: get user value
-# options: USER KEY
-#
-# The function for obtaining certain user's parameters.
 
 
 /usr/local/vesta/bin/v-get-web-domain-value
@@ -1826,23 +1800,6 @@
 # The function for obtaining the list of configured system services.
 
 
-/usr/local/vesta/bin/v-list-sys-shells
-
-# info: list system shells
-# options: [FORMAT]
-#
-# The function for obtaining the list of system shells.
-
-
-/usr/local/vesta/bin/v-list-sys-users
-
-# info: list system users
-# options: [FORMAT]
-#
-# The function for obtaining the list of system users without
-# detailed information.
-
-
 /usr/local/vesta/bin/v-list-sys-vesta-autoupdate
 
 # info: list vesta autoupdate settings
@@ -1930,12 +1887,7 @@
 
 
 
-/usr/local/vesta/bin/v-list-users
 
-# info: list users
-# options: [FORMAT]
-#
-# The function to obtain the list of all system users.
 
 
 /usr/local/vesta/bin/v-list-web-domain
@@ -2076,12 +2028,7 @@
 # The function rebuilds EXIM configuration files for all mail domains.
 
 
-/usr/local/vesta/bin/v-rebuild-user
 
-# info: rebuild system user
-# options: USER [RESTART]
-#
-# The function rebuilds system user account.
 
 
 /usr/local/vesta/bin/v-rebuild-web-domains
@@ -2091,77 +2038,6 @@
 #
 # The function rebuilds web configuration files.
 
-
-/usr/local/vesta/bin/v-restart-cron
-
-# info: restart cron service
-# options: NONE
-#
-# The function tells crond service to reread its configuration files.
-
-
-/usr/local/vesta/bin/v-restart-dns
-
-# info: restart dns service
-# options: NONE
-#
-# The function tells BIND service to reload dns zone files.
-
-
-/usr/local/vesta/bin/v-restart-ftp
-
-# info: restart ftp service
-# options: NONE
-#
-# The function tells ftp server to reread its configuration.
-
-
-/usr/local/vesta/bin/v-restart-mail
-
-# info: restart mail service
-# options: NONE
-#
-# The function tells Exim service to reload configuration files.
-
-
-/usr/local/vesta/bin/v-restart-proxy
-
-# info: restart proxy server
-# options: NONE
-#
-# The function reloads proxy server configuration.
-
-
-/usr/local/vesta/bin/v-restart-service
-
-# info: restart service
-# options: service
-#
-# The function restarts system service.
-
-
-/usr/local/vesta/bin/v-restart-system
-
-# info: restart operating system
-# options: restart
-#
-# The function restarts operating system.
-
-
-/usr/local/vesta/bin/v-restart-web
-
-# info: restart web server
-# options: NONE
-#
-# The function reloads web server configuration.
-
-
-/usr/local/vesta/bin/v-restart-web-backend
-
-# info: restart backend server
-# options: NONE
-#
-# The function reloads backend server configuration.
 
 
 /usr/local/vesta/bin/v-restore-user
@@ -2226,30 +2102,6 @@
 # options: USER DOMAIN CSR_DIR [FORMAT]
 #
 # The function signs certificate request using LetsEncript API
-
-
-/usr/local/vesta/bin/v-start-service
-
-# info: start service
-# options: service
-#
-# The function starts system service.
-
-
-/usr/local/vesta/bin/v-stop-firewall
-
-# info: stop system firewall
-# options: NONE
-#
-# The function stops  iptables
-
-
-/usr/local/vesta/bin/v-stop-service
-
-# info: stop service
-# options: service
-#
-# The function stops system service.
 
 
 /usr/local/vesta/bin/v-suspend-cron-job
@@ -2371,13 +2223,6 @@
 #
 # The function for suspending remote dns server.
 
-
-/usr/local/vesta/bin/v-suspend-user
-
-# info: suspend user
-# options: USER [RESTART]
-#
-# The function suspends a certain user and all his objects.
 
 
 /usr/local/vesta/bin/v-suspend-web-domain
@@ -2523,14 +2368,6 @@
 # options: HOST
 #
 # The function for unsuspending remote dns server.
-
-
-/usr/local/vesta/bin/v-unsuspend-user
-
-# info: unsuspend user
-# options: USER [RESTART]
-#
-# The function unsuspends user and all his objects.
 
 
 /usr/local/vesta/bin/v-unsuspend-web-domain
